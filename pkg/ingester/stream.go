@@ -52,6 +52,8 @@ type chunkDesc struct {
 	chunk   chunkenc.Chunk
 	closed  bool
 	flushed time.Time
+
+	lastUpdated time.Time
 }
 
 func newStream(fp model.Fingerprint, labels []client.LabelPair) *stream {
@@ -80,6 +82,7 @@ func (s *stream) Push(_ context.Context, entries []logproto.Entry) error {
 		if err := s.chunks[len(s.chunks)-1].chunk.Append(&entries[i]); err != nil {
 			return err
 		}
+		s.chunks[len(s.chunks)-1].lastUpdated = time.Now()
 	}
 
 	return nil
