@@ -3,6 +3,7 @@
 <a href="https://circleci.com/gh/grafana/loki/tree/master"><img src="https://circleci.com/gh/grafana/loki.svg?style=shield&circle-token=618193e5787b2951c1ea3352ad5f254f4f52313d" alt="CircleCI" /></a>
 <a href="https://goreportcard.com/report/github.com/grafana/loki"><img src="https://goreportcard.com/badge/github.com/grafana/loki" alt="Go Report Card" /></a>
 <a href="http://slack.raintank.io/"><img src="https://img.shields.io/badge/join%20slack-%23loki-brightgreen.svg" alt="Slack" /></a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Ftoasterproof%2Floki?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftoasterproof%2Floki.svg?type=shield"/></a>
 
 # Loki: like Prometheus, but for logs.
 
@@ -64,3 +65,7 @@ $ cd $GOPATH/src/github.com/grafana/loki # GOPATH is $HOME/go by default.
 $ git remote add <FORK_NAME> <FORK_URL>
 ```
 Notice: `go get` return `package github.com/grafana/loki: no Go files in /go/src/github.com/grafana/loki` is normal.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftoasterproof%2Floki.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftoasterproof%2Floki?ref=badge_large)
